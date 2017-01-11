@@ -27,14 +27,13 @@ get '/active-warning' do
   json parse_active_warnings
 end
 
-get '/vminapp/warning-history/' do
+get '/vminapp/warning-history' do
   parse_warning_history.to_json
 end
 
 get '/vminapp/active-warning' do
   parse_active_warnings.to_json
 end
-
 
 options "*" do
   response.headers["Allow"] = "HEAD,GET,PUT,POST,DELETE,OPTIONS"
