@@ -13,7 +13,7 @@ end
 
 get '/' do
   # 'Hello world!'
-  parse_warning_history.to_s
+  parse_warning_history.to_json
 end
 
 get '/latest-warning' do
