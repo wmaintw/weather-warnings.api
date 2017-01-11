@@ -12,7 +12,8 @@ configure do
 end
 
 get '/' do
-  'Hello world!'
+  # 'Hello world!'
+  json parse_warning_history
 end
 
 get '/latest-warning' do
